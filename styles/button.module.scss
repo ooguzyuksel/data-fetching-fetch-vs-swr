@@ -1,0 +1,34 @@
+.myButton {
+    background: linear-gradient(to right, #196bca, #6433e0);
+    background-color: #196bca;
+    color: #fff;
+    font-family: Trebuchet MS;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;
+    padding: 14px 15px;
+    border: 0px solid #000;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 45px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+.myButton span {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(0deg);
+}
+.myButton:hover {
+    background: linear-gradient(to right, #5482d0, #7d5ee3);
+    background-color: #5482d0;
+}
+.myButton:active {
+    transform: scale(0.95);
+}

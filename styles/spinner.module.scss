@@ -1,0 +1,49 @@
+.customLoader {
+    width: 60px;
+    height: 60px;
+    color: #e7eaf6;
+    background: linear-gradient(currentColor 0 0) 100% 0, linear-gradient(currentColor 0 0) 0 100%;
+    background-size: 50.1% 50.1%;
+    background-repeat: no-repeat;
+    animation: f7-0 1s infinite linear;
+    zoom: 3;
+}
+.customLoader::before,
+.customLoader::after {
+    content: '';
+    position: absolute;
+    inset: 0 50% 50% 0;
+    background: currentColor;
+    transform: scale(var(--s, 1)) perspective(150px) rotateY(0deg);
+    transform-origin: bottom right;
+    animation: f7-1 0.5s infinite linear alternate;
+}
+.customLoader::after {
+    --s: -1, -1;
+}
+
+@keyframes f7-0 {
+    0%,
+    49.99% {
+        transform: scaleX(1) rotate(0deg);
+    }
+    50%,
+    100% {
+        transform: scaleX(-1) rotate(-90deg);
+    }
+}
+
+@keyframes f7-1 {
+    49.99% {
+        transform: scale(var(--s, 1)) perspective(150px) rotateX(-90deg);
+        filter: grayscale(0);
+    }
+    50% {
+        transform: scale(var(--s, 1)) perspective(150px) rotateX(-90deg);
+        filter: grayscale(0.8);
+    }
+    100% {
+        transform: scale(var(--s, 1)) perspective(150px) rotateX(-180deg);
+        filter: grayscale(0.8);
+    }
+}

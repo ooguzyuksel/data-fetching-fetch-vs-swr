@@ -1,0 +1,17 @@
+.orderCardWrapper {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    border: 1px solid gray;
+    border-radius: 4px;
+    width: 600px;
+    padding: 8px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    background-color: #e7eaf6;
+    color: #113f67;
+    gap: 75px;
+}

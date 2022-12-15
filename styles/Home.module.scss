@@ -1,0 +1,27 @@
+.root {
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.buttonWrapper {
+    display: flex;
+    gap: 3rem;
+}
+
+.button {
+    padding: 8px 16px;
+    height: 250px;
+    border-radius: 12px;
+    box-shadow: -14px 12px 31px 6px rgba(0, 0, 0, 0.68);
+    -webkit-box-shadow: -14px 12px 31px 6px rgba(0, 0, 0, 0.68);
+    -moz-box-shadow: -14px 12px 31px 6px rgba(0, 0, 0, 0.68);
+
+    &:hover {
+        cursor: pointer;
+    }
+}
