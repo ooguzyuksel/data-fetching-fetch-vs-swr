@@ -15,3 +15,10 @@
     color: #113f67;
     gap: 75px;
 }
+
+@media (max-width: 768px) {
+    .orderCardWrapper {
+        flex-direction: column;
+        max-width: 90%;
+    }
+}

@@ -1,4 +1,13 @@
 .root {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 25px;
+}
+
+.swrRoot,
+.fetchRoot {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -11,4 +20,8 @@
     justify-content: center;
     align-items: center;
     gap: 25px;
+}
+
+.buttonWrapper {
+    margin-top: 25px;
 }

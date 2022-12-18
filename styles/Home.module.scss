@@ -14,14 +14,36 @@
 }
 
 .button {
-    padding: 8px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
     height: 250px;
+    max-width: 250px;
+    font-size: 1.5rem;
+    padding: 8px 16px;
     border-radius: 12px;
     box-shadow: -14px 12px 31px 6px rgba(0, 0, 0, 0.68);
-    -webkit-box-shadow: -14px 12px 31px 6px rgba(0, 0, 0, 0.68);
     -moz-box-shadow: -14px 12px 31px 6px rgba(0, 0, 0, 0.68);
+    -webkit-box-shadow: -14px 12px 31px 6px rgba(0, 0, 0, 0.68);
+    border: 1px solid #e7eaf6;
+    color: #e7eaf6;
+    background-color: transparent;
 
     &:hover {
         cursor: pointer;
+        color: #113f67;
+        background-color: #e7eaf6;
+    }
+}
+
+@media (max-width: 768px) {
+    .root h1 {
+        text-align: center;
+    }
+
+    .buttonWrapper {
+        flex-direction: column;
     }
 }

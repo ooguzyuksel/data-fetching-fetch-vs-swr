@@ -7,14 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "json-server": "json-server db.json -d 5000 -p 5001 -w db.json"
+    "json-server": "json-server db.json -d 3000 -p 5001 -w db.json"
   },
   "dependencies": {
     "@next/font": "13.0.7",
     "@types/node": "18.11.15",
     "@types/react": "18.0.26",
     "@types/react-dom": "18.0.9",
-    "axios": "^1.2.1",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.7",
     "json-server": "^0.17.1",

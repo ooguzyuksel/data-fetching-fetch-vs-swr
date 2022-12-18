@@ -19,3 +19,10 @@
     all: unset;
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    .userCardWrapper {
+        flex-direction: column;
+        width: 100%;
+    }
+}

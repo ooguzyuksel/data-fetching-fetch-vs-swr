@@ -1,7 +1,14 @@
 .root {
     min-height: 100vh;
     display: flex;
+    align-items: center;
     flex-direction: column;
+    justify-content: flex-start;
+}
+
+.titleWrapper {
+    gap: 25px;
+    display: flex;
     justify-content: center;
     align-items: center;
 }

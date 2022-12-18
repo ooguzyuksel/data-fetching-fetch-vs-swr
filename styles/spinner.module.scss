@@ -1,3 +1,14 @@
+.spinnerWrapper {
+    display: flex;
+    position: absolute;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    z-index: -50;
+}
+
 .customLoader {
     width: 60px;
     height: 60px;
@@ -6,8 +17,9 @@
     background-size: 50.1% 50.1%;
     background-repeat: no-repeat;
     animation: f7-0 1s infinite linear;
-    zoom: 3;
+    zoom: 4;
 }
+
 .customLoader::before,
 .customLoader::after {
     content: '';
@@ -18,6 +30,7 @@
     transform-origin: bottom right;
     animation: f7-1 0.5s infinite linear alternate;
 }
+
 .customLoader::after {
     --s: -1, -1;
 }

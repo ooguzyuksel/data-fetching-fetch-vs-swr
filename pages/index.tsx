@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 import styles from '../styles/home.module.scss';
 
 export default function Home() {
@@ -11,16 +12,30 @@ export default function Home() {
           onClick={() => push('/fetch-based-approach')}
           className={styles.button}
         >
-          Fetch based approach
+          <Image
+            priority
+            height={200}
+            width={200}
+            src='/js-fetch-api.jpeg'
+            alt='Fetch API'
+          />
+          <span>Fetch based approach</span>
         </button>
         <button
           onClick={() => push('/swr-based-approach')}
           className={styles.button}
         >
+          <Image
+            priority
+            height={150}
+            width={200}
+            src='/swr-data-fetching.jpeg'
+            alt='SWR'
+          />
           SWR based approach
         </button>
         <button onClick={() => push('/fetch-vs-swr')} className={styles.button}>
-          See both approaches side by side (her iki yöntem yan yana olacak)
+          See both approaches side by side
         </button>
       </div>
     </div>
