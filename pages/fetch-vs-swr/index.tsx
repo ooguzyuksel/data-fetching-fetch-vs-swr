@@ -40,7 +40,6 @@ const FetchVsSWR = () => {
             const { id, name, age, image, content } = user;
             return (
               <UserCard
-                onClick={() => onClickHandler(id)}
                 id={id}
                 key={id}
                 age={age}
@@ -48,6 +47,7 @@ const FetchVsSWR = () => {
                 name={name}
                 src={image}
                 content={content}
+                onClick={() => onClickHandler(id)}
               />
             );
           })
@@ -67,14 +67,14 @@ const FetchVsSWR = () => {
           const { id, name, age, image, content } = user;
           return (
             <UserCard
-              onClick={() => onClickHandler(id)}
+              id={id}
               key={id}
               src={image}
               alt={name}
               age={age}
               name={name}
               content={content}
-              id={id}
+              onClick={() => onClickHandler(id)}
             />
           );
         })}
