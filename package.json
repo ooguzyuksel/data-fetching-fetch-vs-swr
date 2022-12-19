@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "json-server": "json-server db.json -d 3000 -p 5001 -w db.json"
+    "json-server": "json-server db.json -d 2000 -p 5001 -w db.json"
   },
   "dependencies": {
     "@next/font": "13.0.7",
